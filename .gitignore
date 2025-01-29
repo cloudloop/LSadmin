@@ -25,3 +25,5 @@ vite.config.ts.timestamp-*
 # my own
 .npmrc
 .prettierignore
+firebase*
+firestore.*
