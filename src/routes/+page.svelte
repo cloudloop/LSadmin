@@ -13,18 +13,23 @@
 
 </script>
 
-
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-
-<AuthCheck>
+{#if $user}
 
     <h1>Welcome back, {user.displayName || 'Mysterious User'}!</h1>
     <p>Your email: {user.email}</p>
 
     <Logout />
 
-</AuthCheck>
+    <slot />
 
-<p>CAn you see the secret text above?</p>
+{:else}
+    <p class="text-error">
+        You must be signed in to view this page.
+        <a class="btn btn-primary" href="/login">Sign in</a>
+    </p>
+{/if}
+
+
+
+
+  

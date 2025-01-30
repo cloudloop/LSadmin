@@ -12,4 +12,4 @@
     }
 </script>
 
-<button class="btn btn-accent" on:click={logout}>Logout</button>
+<button class="btn btn-accent" onclick={logout}>Logout</button>
