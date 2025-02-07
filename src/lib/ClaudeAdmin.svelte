@@ -1,56 +1,43 @@
 <script>
-    console.log(`ClaudeAdmin 1`);
-    import { onMount } from 'svelte';
-    import { collection, getDocs, updateDoc, doc, getDoc } from 'firebase/firestore';
+    import { getContext, onMount } from 'svelte';
+    import { collection, getDocs, updateDoc, getDoc, deleteDoc, setDoc ,doc} from 'firebase/firestore';
     import { db } from '$lib/firebase';
     import { flip } from 'svelte/animate';
     import { dndzone } from 'svelte-dnd-action';
     import { toast } from '@zerodevx/svelte-toast';
+    
+    const user = getContext("user");
 
     // In your component
     import { browser } from '$app/environment';
   
-    let allowedStores = [];
-    let disallowedStores = [];
-    let loading = true;
-    let error = null;
-    let searchAllowed = '';
-    let searchDisallowed = '';
+    let allowedStores = $state([]);
+    let disallowedStores = $state([]);
+    let loading = $state(true);
+    let error = $state(null);
+    let searchAllowed = $state();
+    let searchDisallowed = $state();
   
     //New fetchStores
     async function fetchStores() {
     try {
         loading = true;
         error = null;
-
-        //Checking DB connection
-        console.log(`${db}`);
-        
         console.log('Starting fetch operation...');
-         // Try to get a specific document first (if you know an ID)
-        console.log(`Fetching single document...`);
-        const singleDocRef = doc(db, 'allowed', 'SE1001');
-        const singleDocSnap = await getDoc(singleDocRef);
-        console.log('Single doc exists:', singleDocSnap.exists());
-        console.log('Single doc data:', singleDocSnap.data());
-
-
         console.log(`Fetching whole DB`);
-        const allowedRef = collection(db, 'allowed');
-        console.log('Collection reference created');
-
+        const allowedRef = collection(db, 'LSstores');
+        console.log('Collection reference found');
         // Add this debug check
         console.log('Collection path:', allowedRef.path);
         
         const allowedSnapshot = await getDocs(allowedRef);
-        console.log('Raw snapshot:', allowedSnapshot);
-        console.log('Empty?:', allowedSnapshot.empty);
 
         if (allowedSnapshot.empty) {
             console.log('No documents found in collection');
             allowedStores = [];
             return;
         }
+
 
         console.log(`Fetched ${allowedSnapshot.size} documents`);
         
@@ -59,11 +46,13 @@
             console.log('Document data:', data);
             return {
                 id: doc.id,
-                storeid: data.storeid
+                storeid: data.storeid,
+                country: data.country,
             };
         });
         
         console.log('Fetch operation completed successfully');
+
     } catch (err) {
         console.error('Detailed error:', err);
         error = `Failed to fetch stores: ${err.message} (${err.code})`;
@@ -78,50 +67,23 @@
         loading = false;
     }
     }
-
-    {
-    // Fetch data from Firestore
-    // async function fetchStores() {
-    //   try {
-    //     loading = true;
-    //     error = null;
-        
-    //     console.log(`Fetching stores...`);
-    //     const allowedSnapshot = await getDocs(collection(db, 'allowed'));
-    //     //const disallowedSnapshot = await getDocs(collection(db, 'disallowed'));
-    //     console.log(`${allowedSnapshot}`);
-        
-    //     console.log(`Mapping stores`);
-    //     allowedStores = allowedSnapshot.docs.map(doc => ({
-    //       id: doc.id,
-    //       storeid: doc.data().storeid
-    //     }));
-        
-    //     // disallowedStores = disallowedSnapshot.docs.map(doc => ({
-    //     //   id: doc.id,
-    //     //   storeid: doc.data().storeid
-    //     // }));
-    //   } catch (err) {
-    //     error = 'Failed to fetch stores: ' + err.message;
-    //     toast.push({
-    //       message: error,
-    //       theme: {
-    //         '--toastBackground': '#F87171',
-    //         '--toastColor': 'white'
-    //       }
-    //     });
-    //   } finally {
-    //     loading = false;
-    //   }
-    // }
-    }
   
     // Update store status in Firestore
     async function updateStoreStatus(storeid, newStatus) {
       try {
+        console.log(`Updating store ${storeid} to ${newStatus}`);
         const docRef = doc(db, newStatus === 'allowed' ? 'allowed' : 'disallowed', storeid);
-        await updateDoc(docRef, { status: newStatus });
-        await fetchStores(); // Refresh the lists
+        const docRefInverse = doc(db, newStatus === 'allowed' ? 'disallowed' : 'allowed', storeid);
+        //Creating new Doc
+        console.log(`Creating new doc in ${newStatus} collection`);
+        await setDoc(docRef, { 
+          storeid: storeid,
+          country: 'XY',
+          editor: user.uid,
+          timestamp: new Date().toISOString(),
+         });
+        //Deleting old Doc
+        await deleteDoc(docRefInverse);
         toast.push({
           message: `Store ${storeid} moved successfully`,
           theme: {
@@ -129,6 +91,7 @@
             '--toastColor': 'white'
           }
         });
+        await fetchStores(); // Refresh the lists
       } catch (err) {
         error = 'Failed to update store status: ' + err.message;
         toast.push({
@@ -143,11 +106,16 @@
   
     // DnD handlers
     function handleDndConsider(e) {
-      const { items } = e.detail;
-      if (e.currentTarget.dataset.list === 'allowed') {
-        allowedStores = items;
-      } else {
-        disallowedStores = items;
+      try {
+        const { items } = e.detail;
+        console.log(`Dragging items ${items}`);
+        if (e.currentTarget.dataset.list === 'allowed') {
+          allowedStores = items;
+        } else {
+          disallowedStores = items;
+        }
+      } catch (err) {
+        console.error('Drag and drop consideration error:', err);
       }
     }
   
@@ -163,12 +131,15 @@
     }
   
     // Filter stores based on search
-    $: filteredAllowed = allowedStores.filter(store => 
-      store.storeid.toLowerCase().includes(searchAllowed.toLowerCase())
-    );
-    $: filteredDisallowed = disallowedStores.filter(store => 
-      store.storeid.toLowerCase().includes(searchDisallowed.toLowerCase())
-    );
+
+    // let filteredAllowed = '';
+    // filteredAllowed = allowedStores.filter(store => 
+    //   store.storeid.toLowerCase().includes(searchAllowed.toLowerCase())
+    // );
+    // let filteredDisallowed = '';
+    // filteredDisallowed = disallowedStores.filter(store => 
+    //   store.storeid.toLowerCase().includes(searchDisallowed.toLowerCase())
+    // );
   
     onMount(() => {
         if (browser) {
@@ -195,8 +166,8 @@
               class="min-h-[200px] p-4 bg-base-200 rounded-lg"
               use:dndzone={{items: allowedStores}}
               data-list="allowed"
-              on:consider={handleDndConsider}
-              on:finalize={handleDndFinalize}
+              onconsider={handleDndConsider}
+              onfinalize={handleDndFinalize}
             >
               {#each allowedStores as store (store.storeid)}
                 <div
@@ -218,8 +189,8 @@
               class="min-h-[200px] p-4 bg-base-200 rounded-lg"
               use:dndzone={{items: disallowedStores}}
               data-list="disallowed"
-              on:consider={handleDndConsider}
-              on:finalize={handleDndFinalize}
+              onconsider={handleDndConsider}
+              onfinalize={handleDndFinalize}
             >
               {#each disallowedStores as store (store.id)}
                 <div
@@ -254,12 +225,12 @@
             />
           </div>
           <div class="h-[400px] overflow-y-auto mt-4">
-            <!-- {#each filteredAllowed as store (store.id)}
+            <!-- {#each $filteredAllowed as store (store.id)}
               <div class="flex justify-between items-center p-3 mb-2 bg-base-200 rounded-lg">
                 <span>{store.storeid}</span>
                 <button
                   class="btn btn-error btn-sm"
-                  on:click={() => updateStoreStatus(store.storeid, 'disallowed')}
+                  onclick={() => updateStoreStatus(store.storeid, 'disallowed')}
                 >
                   Move to Disallowed
                 </button>
@@ -282,12 +253,12 @@
             />
           </div>
           <div class="h-[400px] overflow-y-auto mt-4">
-            <!-- {#each filteredDisallowed as store (store.id)}
+            <!-- {#each $filteredDisallowed as store (store.id)}
               <div class="flex justify-between items-center p-3 mb-2 bg-base-200 rounded-lg">
                 <span>{store.storeid}</span>
                 <button
                   class="btn btn-success btn-sm"
-                  on:click={() => updateStoreStatus(store.storeid, 'allowed')}
+                  onclick={() => updateStoreStatus(store.storeid, 'allowed')}
                 >
                   Move to Allowed
                 </button>

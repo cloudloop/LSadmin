@@ -35,6 +35,8 @@
 	"dependencies": {
 		"@zerodevx/svelte-toast": "^0.9.6",
 		"firebase": "^11.2.0",
+		"fs": "^0.0.1-security",
+		"papaparse": "^5.5.2",
 		"svelte-dnd-action": "^0.9.57"
 	}
 }

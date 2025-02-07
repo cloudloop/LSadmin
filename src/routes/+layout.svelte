@@ -1,37 +1,37 @@
 <script>
-	import '../app.css';
-	let { children } = $props();
+    import '../app.css';
+    let { children } = $props();
 
-	import { onMount } from "svelte";
-	import { getAuth, onAuthStateChanged } from "firebase/auth";
-	import { writable } from "svelte/store";
-	import { setContext } from "svelte";
-	import "../lib/firebase"; // Ensure Firebase is initialized here
+    import { getAuth, onAuthStateChanged } from "firebase/auth";
+    import { writable } from "svelte/store";
+    import { setContext } from "svelte";
+	import Login from "../lib/Login.svelte";
+    import "../lib/firebase";
+	import Navbar from '$lib/Navbar.svelte';
 
-	// Create a writable store for user state
-	export const user = writable(null);
+    const auth = getAuth();
+    export const user = writable(null);
 
-	onMount(() => {
-		const auth = getAuth();
-		
-		// Listen for authentication state changes
-		const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
-		if (firebaseUser) {
-			user.set(firebaseUser); // firebaseUser is provided by Firebase Auth
-			console.log('User is authenticated:', firebaseUser.uid);
-		} else {
-			user.set(null);
-			console.log('User is not authenticated');
-		}
-		});
+    // Set up auth listener immediately, not waiting for mount
+    onAuthStateChanged(auth, (firebaseUser) => {
+        user.set(firebaseUser);
+        console.log(firebaseUser 
+            ? `User is authenticated: ${firebaseUser.uid}`
+            : 'User is not authenticated'
+        );
+    });
 
-		// Cleanup subscription on component unmount
-		return () => unsubscribe();
-	});
-
-	// Provide user state globally
-	setContext("user", user);
+    // Set context immediately
+    setContext("user", user);
 </script>
+
+{#if !$user}
+	<Login />
+{:else}
+	{#if $user}
+		{@render children()}
+	{/if}
+{/if}
 		
-{@render children()}
+
 

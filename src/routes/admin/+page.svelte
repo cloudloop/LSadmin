@@ -9,6 +9,10 @@
     const user = getContext("user");
     import { goto } from '$app/navigation';
 	import ClaudeAdmin from '$lib/ClaudeAdmin.svelte';
+
+    import Admin from '$lib/Admin.svelte';
+
+
 	// If user is not logged in, redirect or show 403
     
    
@@ -19,6 +23,5 @@
     
 </script>
 
-<p>This is the admin data page for authenticated users.</p>
 
-<ClaudeAdmin />
+<Admin />
