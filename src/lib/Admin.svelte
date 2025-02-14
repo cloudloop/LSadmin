@@ -6,6 +6,9 @@
     import { getContext, onMount } from 'svelte';
     import { collection, getDocs, updateDoc, getDoc, deleteDoc, setDoc ,doc, serverTimestamp} from 'firebase/firestore';
     import { db } from '$lib/firebase'
+    import { logEvent, getAnalytics } from "firebase/analytics";
+    const analytics = getAnalytics();
+
 
     //Import global user context to check login status
     const user = getContext("user");
@@ -46,6 +49,11 @@
             const storeRef = doc(db, 'LSstore', storeid);
             await updateDoc(storeRef, {LSallowed: newLSallowed, lastEdit: serverTimestamp(), user: $user.email});
             console.log(`Updated ${storeid} to ${newLSallowed}`);
+
+            logEvent(analytics, 'store_toggled', {
+                storid: storeid,
+                toggled_to: newLSallowed,
+              });
 
         // Optimistically update UI
         dbObjects = dbObjects.map(store => 
