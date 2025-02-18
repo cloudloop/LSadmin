@@ -7,41 +7,34 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
-const {onRequest} = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
+import {onRequest, onCall} from "firebase-functions/v2/https";
+import logger from "firebase-functions/logger";
+
+//AllowCORS only needed for onRequest functions, and not for onCall functions
+import {allowCors} from "../src/lib/cors.js";
 
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
-exports.helloWorld = onRequest((request, response) => {
-  logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
+
+
+const helloWorld2 = onCall(async (data, context) => {
+  //allowCors(request, response);
+   // Ensure user is authenticated
+   if (!context.auth) {
+      throw new Error("Unauthorized");
+  }
+
+  // If data is passed from the client, we can access it here
+  const { name, age } = data;
+
+  logger.info("Received data:", { name, age });
+
+  return { message: `Hello ${name}, you are ${age} years old!` };
 });
 
+import { updateStoreSettings } from "./SecureUpdate.js";
+
+export { updateStoreSettings };
 
 
-// // Firebase Functions (index.js)
-// const functions = require('firebase-functions');
-// const admin = require('firebase-admin');
-
-// admin.initializeApp();
-
-// // HTTP Trigger Function
-// exports.httpFunction = functions.https.onRequest((req, res) => {
-//   const db = admin.firestore();
-//   db.collection('httpLogs').add({
-//     timestamp: new Date(),
-//     data: req.body
-//   });
-//   res.status(200).json({ message: 'HTTP Function Executed' });
-// });
-
-// // Callable Function
-// exports.callableFunction = functions.https.onCall(async (data, context) => {
-//   const db = admin.firestore();
-//   await db.collection('callableLogs').add({
-//     timestamp: new Date(),
-//     data: data
-//   });
-//   return { result: 'Callable Function Completed' };
-// });

@@ -65,6 +65,7 @@
     }
 
     onMount(fetchStores);
+
 </script>
 
 {#if loading}
