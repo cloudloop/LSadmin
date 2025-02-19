@@ -16,20 +16,29 @@
     
     //Testing Firesstore HTTP Function
     import { getFunctions, httpsCallable } from "firebase/functions";
+	import { app } from '$lib/firebase.js';
 
     // Get a reference to the functions
-    const functions = getFunctions();
+    const func = getFunctions(app, 'europe-north1');
 
 
     // Call the 'helloWorld' function and pass data
     function triggerFunction(){
-        const helloWorldFunction = httpsCallable(functions, 'helloWorld2');
+        const helloWorldFunction = httpsCallable(func, 'helloworld');
         helloWorldFunction({ name: 'Axel', age: 30 })
         .then((result) => {
-            console.log(result.data);  // This is the response from the function
+            const data = result.data;
+            const sanitizedMessage = data.message;;  // This is the response from the function
+            console.log(`Data: ${data}`);
+            console.log(`Sanitized message: ${sanitizedMessage}`);
         })
         .catch((error) => {
-            console.error('Error calling function:', error);
+            // Getting the Error details.
+            const code = error.code;
+            const message = error.message;
+            const details = error.details;
+            console.error(`Error: ${code} - ${message}`);
+            console.error(`Details: ${details}`);
         });
     };
 

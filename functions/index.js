@@ -18,7 +18,7 @@
 //   response.send("Hello from Firebase!");
 // });
 
-import {onCall} from "firebase-functions/v2/https";
+import {onCall, HttpsError} from "firebase-functions/v2/https";
 import logger from "firebase-functions/logger";
 
 //AllowCORS only needed for onRequest functions, and not for onCall functions
@@ -27,26 +27,43 @@ import logger from "firebase-functions/logger";
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
-const onCallarg1 = {
-    cors: [/firebase\.com$/,/run\.app$/, "https://flutter.com", "http://localhost:3000", "http://localhost:5173", "0.0.0.0:8080"],
+const options = {
+    //cors: [/firebase\.com$/,/run\.app$/, "https://flutter.com", "http://localhost:3000", /^http:\/\/localhost:\d{4}$/, "0.0.0.0:8080"],
+    cors: [true],
     region: "europe-north1",
     maxInstances: 1,
     memory: "256MiB",
     timeoutSeconds: 180,
 }
 
-export const helloworld = onCall(onCallarg1 ,async (data, context) => {
-  
-  //allowCors(request, response);
-   // Ensure user is authenticated
-   if (!context.auth) {
-      throw new Error("Unauthorized");
-  }
+export const helloworld = onCall(options, (req) => {
+    const uid = req.auth.uid;
+    const email = req.auth.token.email || null;
+    console.log(`Hello from ${uid} (${email})`);
+    // Log the received data to debug
+    logger.info({"Received data": req.data});
 
-  // If data is passed from the client, we can access it here
-  const { name, age } = data;
+   // Checking attribute.
+    if (!(typeof req.data === "object") || Object.entries(req.data).length === 0) {
+        // Throwing an HttpsError so that the client gets the error details.
+        throw new HttpsError("invalid-argument", "The function must be called " +
+                "with one arguments \"text\" containing the object to add.");
+    }
+    // Checking that the user is authenticated.
+    if (!req.auth) {
+        // Throwing an HttpsError so that the client gets the error details.
+        throw new HttpsError("failed-precondition", "The function must be " +
+                "called while authenticated.");
+    }
 
-  logger.info("Received data:", { name, age });
+    // If data is passed from the client, we can access it here
+    // Ensure the payload structure is as expected
+    const name = req.data?.name;
+    const age = req.data?.age;
+
+    if (!name || !age) {
+    throw new Error("Invalid input data");
+    }
 
   return { message: `Hello ${name}, you are ${age} years old!` };
 });
@@ -67,11 +84,11 @@ import { initializeApp } from "firebase-admin/app";
 initializeApp();
 const db = getFirestore();
 
-export const updatestoresettings = onCall( onCallarg1, async (data, context) => {
+export const updatestoresettings = onCall(options, async (data, context) => {
     // Ensure user is authenticated
-    if (!context.auth) {
-        throw new Error("Unauthorized");
-    }
+    // if (!context.auth) {
+    //     throw new Error("Unauthorized");
+    // }
 
     const userId = context.auth.uid;
     const { storeid, LSallowed } = data;

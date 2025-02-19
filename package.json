@@ -10,7 +10,7 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"deploy_functions": "firebase deploy --only functions"
+		"df": "firebase deploy --only functions"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -37,7 +37,6 @@
 		"@zerodevx/svelte-toast": "^0.9.6",
 		"firebase": "^11.2.0",
 		"firebase-admin": "^13.1.0",
-		"firebase-functions": "^6.3.2",
 		"fs": "^0.0.1-security",
 		"papaparse": "^5.5.2",
 		"svelte-dnd-action": "^0.9.57"
