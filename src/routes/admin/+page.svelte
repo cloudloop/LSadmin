@@ -23,7 +23,7 @@
 
     // Call the 'helloWorld' function and pass data
     function triggerFunction(){
-        const helloWorldFunction = httpsCallable(functions, 'helloWorld');
+        const helloWorldFunction = httpsCallable(functions, 'helloWorld2');
         helloWorldFunction({ name: 'Axel', age: 30 })
         .then((result) => {
             console.log(result.data);  // This is the response from the function
