@@ -28,8 +28,8 @@ import logger from "firebase-functions/logger";
 // https://firebase.google.com/docs/functions/get-started
 
 const options = {
-    //cors: [/firebase\.com$/,/run\.app$/, "https://flutter.com", "http://localhost:3000", /^http:\/\/localhost:\d{4}$/, "0.0.0.0:8080"],
-    cors: [true],
+    cors: [/firebase\.com$/,/run\.app$/, "https://flutter.com", "http://localhost:3000", /^http:\/\/localhost:\d{4}$/, "0.0.0.0:8080"],
+    //cors: [true],
     region: "europe-north1",
     maxInstances: 1,
     memory: "256MiB",
@@ -77,41 +77,63 @@ export const helloworld = onCall(options, (req) => {
 
 
 
-import { getFirestore } from "firebase-admin/firestore";
-import { initializeApp } from "firebase-admin/app";
+import { getFirestore, FieldValue } from "firebase-admin/firestore";
+import { initializeApp, applicationDefault } from "firebase-admin/app";
 
 // Initialize Firebase Admin
-initializeApp();
-const db = getFirestore();
+initializeApp({
+    credential: applicationDefault(),
+  });
+const db = getFirestore(undefined, "db01")
 
-export const updatestoresettings = onCall(options, async (data, context) => {
-    // Ensure user is authenticated
-    // if (!context.auth) {
-    //     throw new Error("Unauthorized");
-    // }
+export const updatestoresettings = onCall(options, async (req) => {
+    const uid = req.auth.uid;
+    const email = req.auth.token.email || null;
+    const storeId = req.data.storeid;
+    const LSallowed = req.data.LSallowed;
 
-    const userId = context.auth.uid;
-    const { storeid, LSallowed } = data;
+    console.log(`Hello from ${uid} (${email})`);
+    // Log the received data to debug
+    logger.info({"Received data": req.data});
 
+    // Checking attribute.
+    if (!(typeof req.data === "object") || Object.entries(req.data).length === 0) {
+        // Throwing an HttpsError so that the client gets the error details.
+        throw new HttpsError("invalid-argument", "The function must be called " +
+                "with one arguments \"text\" containing the object to add.");
+    }
+    // Checking that the user is authenticated.
+    if (!req.auth) {
+        // Throwing an HttpsError so that the client gets the error details.
+        throw new HttpsError("failed-precondition", "The function must be " +
+                "called while authenticated.");
+    }
     // Validate input
-    if (!storeid || typeof LSallowed !== "boolean") {
+    if (!storeId || typeof LSallowed !== "boolean") {
         throw new Error("Invalid input data");
     }
 
     try {
-        // Fetch user roles from Firestore (if needed)
-        const userDoc = await db.collection("users").doc(userId).get();
-        const userData = userDoc.data();
+        // // Fetch user roles from Firestore (if needed)
+        const userDoc = await db.collection("admin").doc(email).get();
 
-        if (!userData || !userData.isAdmin) {
-            throw new Error("Insufficient permissions");
+        if (!userDoc.exists) {
+            logger.info(`User ${email} (UID: ${uid}) does not exists in admin list. Creating role and setting permissions to false.`);
+            db.collection("admin").doc(email).set({ admin: false, uid: uid });
         }
+            
+        if (!userDoc.data()?.admin) {
+            logger.error(`User ${email} (UID: ${uid}) attempted to update store settings without permission`);
+            throw new HttpsError("permission-denied", "Insufficient permissions");
+        }
+        
+        // // Perform the update
+        await db.collection("LSstore").doc(storeId).update({ LSallowed: LSallowed, lastEdit: FieldValue.serverTimestamp(), user: email , uid: uid });
 
-        // Perform the update
-        await db.collection("stores").doc(storeid).update({ LSallowed });
-
-        return { success: true, message: "Update successful" };
+        logger.info(`Store settings updated for store ${storeId} to ${LSallowed} by user ${email} (UID: ${uid})`);
+        return { success: true, message: `Update successful. ${storeId} is now ${LSallowed}`};
     } catch (error) {
+        logger.error("Firestore operation failed:", error);
         return { success: false, message: error.message };
     }
 });

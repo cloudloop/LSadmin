@@ -8,6 +8,12 @@
     import { db } from '$lib/firebase'
     import { logEvent, getAnalytics } from "firebase/analytics";
     const analytics = getAnalytics();
+    
+    //Implementing Firebase Functions
+    import { getFunctions, httpsCallable } from "firebase/functions";
+	  import { app } from '$lib/firebase.js';
+    // Get a reference to the functions
+    const func = getFunctions(app, 'europe-north1');
 
 
     //Import global user context to check login status
@@ -42,16 +48,40 @@
         loading = false;
     }};
 
+    async function writeViaFunction(object) {
+      const functionWrite = httpsCallable(func, 'updatestoresettings');
+      functionWrite(object)
+      .then((result) => {
+          const data = result.data.message;  // This is the response from the function
+          console.log(`Function reponse message: ${data}`);
+      })
+      .catch((error) => {
+          // Getting the Error details.
+          const code = error.code;
+          const message = error.message;
+          const details = error.details;
+          console.error(`Error: ${code} - ${message}`);
+          console.error(`Details: ${details}`);
+      });
+    }
+
     async function toggleChange(event) {
         try {
             const storeid = event.target.dataset.storeid;
             const newLSallowed = event.target.checked;
-            const storeRef = doc(db, 'LSstore', storeid);
-            await updateDoc(storeRef, {LSallowed: newLSallowed, lastEdit: serverTimestamp(), user: $user.email});
-            console.log(`Updated ${storeid} to ${newLSallowed}`);
+
+            //Triggering update Firebase Function
+            const object = {storeid: storeid, LSallowed: newLSallowed};
+            console.log(`Updating ${storeid} to ${newLSallowed} via functions`);
+            await writeViaFunction(object)
+            console.log(`----`);
+
+            // const storeRef = doc(db, 'LSstore', storeid);
+            // await updateDoc(storeRef, {LSallowed: newLSallowed, lastEdit: serverTimestamp(), user: $user.email});
+            // console.log(`Updated ${storeid} to ${newLSallowed} via direct write`);
 
             logEvent(analytics, 'store_toggled', {
-                storid: storeid,
+                storeid: storeid,
                 toggled_to: newLSallowed,
               });
 
