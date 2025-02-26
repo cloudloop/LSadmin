@@ -24,6 +24,71 @@
     let error = $state(null);
     let dbObjects = $state([]);
 
+    // New state for search and sort
+    let searchTerm = $state('');
+    let filteredObjects = $derived(getFilteredObjects());
+    let sortColumn = $state('storeid');
+    let sortDirection = $state('asc');
+
+    // New function to handle column sorting
+    function sortData(column) {
+        // If clicking the same column, toggle direction
+        if (sortColumn === column) {
+            sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+        } else {
+            // New column, default to ascending
+            sortColumn = column;
+            sortDirection = 'asc';
+        }
+    }
+
+    // New function to apply search filter and sorting
+    // Function to get filtered and sorted objects
+    function getFilteredObjects() {
+        if (loading || !dbObjects.length) {
+            return [];
+        }
+
+        // Filter by search term
+        let filtered = dbObjects;
+        if (searchTerm.trim() !== '') {
+            const term = searchTerm.toLowerCase();
+            filtered = dbObjects.filter(store => 
+                Object.values(store).some(value => 
+                    String(value).toLowerCase().includes(term)
+                )
+            );
+        }
+        
+        // Sort the results
+        return [...filtered].sort((a, b) => {
+            let valueA = a[sortColumn];
+            let valueB = b[sortColumn];
+            
+            // Handle different data types
+            if (typeof valueA === 'string') {
+                valueA = valueA.toLowerCase();
+                valueB = valueB.toLowerCase();
+            }
+            
+            // Handle timestamp objects from Firebase
+            if (valueA instanceof Object && valueA?.seconds) {
+                valueA = valueA.seconds;
+                valueB = valueB.seconds;
+            }
+            
+            if (valueA < valueB) return sortDirection === 'asc' ? -1 : 1;
+            if (valueA > valueB) return sortDirection === 'asc' ? 1 : -1;
+            return 0;
+        });
+    }
+
+    // Helper function to get sort indicator
+    function getSortIndicator(column) {
+        if (sortColumn !== column) return '';
+        return sortDirection === 'asc' ? '↑' : '↓';
+    }
+
     //fetch function. Fetch store info from firestore
     async function fetchStores() {
     try {
@@ -39,7 +104,7 @@
         dbObjects = dbResponse.docs.map(doc => doc.data());
         // console.log(`${dbObjects.length} documents found in collection`);
 
-
+        getFilteredObjects();
     } catch (err) {
         console.error('Detailed error:', err);
         error = `Failed to fetch stores: ${err.message} (${err.code})`;
@@ -86,13 +151,23 @@
               });
 
         // Optimistically update UI
-        dbObjects = dbObjects.map(store => 
+            dbObjects = dbObjects.map(store => 
                 store.storeid === storeid ? { ...store, LSallowed: newLSallowed,user: $user.email } : store
             );
+
+            // Update filtered list as well
+            getFilteredObjects(); 
         } catch (err) {
             console.error("Error updating Firestore:", err);
         }
     }
+
+    // Use $effect to watch for changes in search term
+    // $effect(() => {
+    //     if (searchTerm !== undefined && !loading) {
+    //         applyFilters();
+    //     }
+    // });
 
     onMount(fetchStores);
 
@@ -104,21 +179,31 @@
       </div>
 {:else}
 
+<!-- New search input -->
+<div class="mb-4">
+  <input
+      type="text"
+      bind:value={searchTerm}
+      placeholder="Search stores..."
+      class="input input-bordered w-full max-w-xs"
+  />
+</div>
+
 <div class="overflow-x-auto pt-5">
     <table class="table">
       <!-- head -->
       <thead>
         <tr>
             <th></th>
-          <th>StoreID</th>
-          <th>L&S Allowed</th>
-          <th>Last edited</th>
-          <th>Last edit by</th>
+          <th class="cursor-pointer" onclick={() => sortData('storeid')}>StoreID</th>
+          <th class="cursor-pointer" onclick={() => sortData('LSallowed')}>L&S Allowed</th>
+          <th class="cursor-pointer" onclick={() => sortData('lastEdit')}>Last edited</th>
+          <th class="cursor-pointer" onclick={() => sortData('user')}>Last edit by</th>
           <th>Change</th>
         </tr>
       </thead>
       <tbody>
-        {#each dbObjects as storeObject}
+        {#each filteredObjects as storeObject}
           <tr>
             <th></th>
             <th>{storeObject.storeid}</th>
@@ -128,6 +213,11 @@
             <td><input type="checkbox" class="toggle" checked={storeObject.LSallowed} data-storeid={storeObject.storeid} onchange={toggleChange}/></td>
           </tr>
         {/each}
+        {#if filteredObjects.length === 0}
+                    <tr>
+                        <td colspan="6" class="text-center py-4">No matching stores found</td>
+                    </tr>
+          {/if}
     </tbody>
     </table>
     </div>
