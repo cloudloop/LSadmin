@@ -196,9 +196,9 @@
         <tr>
             <th></th>
           <th class="cursor-pointer" onclick={() => sortData('storeid')}>StoreID</th>
-          <th class="cursor-pointer" onclick={() => sortData('LSallowed')}>L&S Allowed</th>
-          <th class="cursor-pointer" onclick={() => sortData('lastEdit')}>Last edited</th>
-          <th class="cursor-pointer" onclick={() => sortData('user')}>Last edit by</th>
+          <th class="cursor-pointer" onclick={() => sortData('L&S Allowed')}>L&S Allowed</th>
+          <th class="cursor-pointer" onclick={() => sortData('Last edited')}>Last edited</th>
+          <th class="cursor-pointer" onclick={() => sortData('Last edit by')}>Last edit by</th>
           <th>Change</th>
         </tr>
       </thead>
