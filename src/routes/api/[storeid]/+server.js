@@ -1,7 +1,4 @@
 /** @type {import('./$types').RequestHandler} */
-export async function GET() {
-    return new Response();
-};
 
 import { json } from '@sveltejs/kit';
 import { db } from '$lib/firebase';
