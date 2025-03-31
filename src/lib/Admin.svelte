@@ -2,76 +2,66 @@
     /** @type {{ data: import('./$types').PageData }} */
     let { data } = $props();
 
-    // Import neccesities
+    // Import necessities
     import { getContext, onMount } from 'svelte';
-    import { collection, getDocs, updateDoc, getDoc, deleteDoc, setDoc ,doc, serverTimestamp} from 'firebase/firestore';
+    import { collection, getDocs, doc, serverTimestamp } from 'firebase/firestore';
     import { db } from '$lib/firebase'
     import { logEvent, getAnalytics } from "firebase/analytics";
-    const analytics = getAnalytics();
-    
-    //Implementing Firebase Functions
     import { getFunctions, httpsCallable } from "firebase/functions";
-	  import { app } from '$lib/firebase.js';
-    // Get a reference to the functions
+    import { app } from '$lib/firebase.js';
+    
+    const analytics = getAnalytics();
     const func = getFunctions(app, 'europe-north1');
-
 
     //Import global user context to check login status
     const user = getContext("user");
 
-    //Defining Runes
+    // State management using Svelte 5 runes
     let loading = $state(true);
     let error = $state(null);
     let dbObjects = $state([]);
-
-    // New state for search and sort
     let searchTerm = $state('');
-    let filteredObjects = $derived(getFilteredObjects());
     let sortColumn = $state('storeid');
     let sortDirection = $state('asc');
 
-    // New function to handle column sorting
-    function sortData(column) {
-        // If clicking the same column, toggle direction
-        if (sortColumn === column) {
-            sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-        } else {
-            // New column, default to ascending
-            sortColumn = column;
-            sortDirection = 'asc';
-        }
-    }
+    // Computed properties using $derived
+    let filteredObjects = $derived.by(() => {
+        // console.log('Computing filteredObjects');
+        console.log('--------------------------------');
+        console.log('dbObjects length:', dbObjects.length);
+        console.log('searchTerm:', searchTerm);
+        console.log('sortColumn:', sortColumn);
+        // console.log('sortDirection:', sortDirection);
 
-    // New function to apply search filter and sorting
-    // Function to get filtered and sorted objects
-    function getFilteredObjects() {
-        if (loading || !dbObjects.length) {
+        if (!dbObjects.length) {
+            console.log('No dbObjects, returning empty array');
             return [];
         }
 
-        // Filter by search term
-        let filtered = dbObjects;
-        if (searchTerm.trim() !== '') {
-            const term = searchTerm.toLowerCase();
-            filtered = dbObjects.filter(store => 
-                Object.values(store).some(value => 
-                    String(value).toLowerCase().includes(term)
-                )
-            );
-        }
+        const term = searchTerm.toLowerCase().trim();
+        let filtered = term 
+            ? dbObjects.filter(store => 
+                store.storeid.toLowerCase().includes(term)
+            )
+            : dbObjects;
         
-        // Sort the results
+        console.log('Filtered before sort:', filtered.length);
+        
         return [...filtered].sort((a, b) => {
             let valueA = a[sortColumn];
             let valueB = b[sortColumn];
             
-            // Handle different data types
-            if (typeof valueA === 'string') {
+            // Handle boolean values
+            if (sortColumn === 'LSallowed') {
+                valueA = Boolean(valueA);
+                valueB = Boolean(valueB);
+            }
+            // Handle string values
+            else if (typeof valueA === 'string') {
                 valueA = valueA.toLowerCase();
                 valueB = valueB.toLowerCase();
             }
             
-            // Handle timestamp objects from Firebase
             if (valueA instanceof Object && valueA?.seconds) {
                 valueA = valueA.seconds;
                 valueB = valueB.seconds;
@@ -81,37 +71,93 @@
             if (valueA > valueB) return sortDirection === 'asc' ? 1 : -1;
             return 0;
         });
+    });
+
+    // Debug effect
+    $effect(() => {
+        console.log('Effect triggered - filteredObjects length:', filteredObjects.length);
+    });
+
+    // Format timestamp for display
+    function formatTimestamp(timestamp) {
+        if (!timestamp || !timestamp.seconds) return '';
+        const date = new Date(timestamp.seconds * 1000);
+        return date.toLocaleString();
     }
 
-    // Helper function to get sort indicator
-    function getSortIndicator(column) {
-        if (sortColumn !== column) return '';
-        return sortDirection === 'asc' ? '↑' : '↓';
+    // Optimized sort handler with debouncing
+    let sortTimeout;
+    function sortData(column) {
+        clearTimeout(sortTimeout);
+        sortTimeout = setTimeout(() => {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+        }, 50);
     }
 
-    //fetch function. Fetch store info from firestore
+    // Fetch function with error handling and loading states
     async function fetchStores() {
-    try {
-        loading = true;
-        error = null;
-        // console.log('Starting fetch operation...');
-        // console.log(`Fetching whole DB`);
-        const allowedRef = collection(db, 'LSstore');
-        // console.log('Collection reference found');
-        // console.log('Collection path:', allowedRef.path);
-        
-        const dbResponse = await getDocs(allowedRef);
-        dbObjects = dbResponse.docs.map(doc => doc.data());
-        // console.log(`${dbObjects.length} documents found in collection`);
-
-        getFilteredObjects();
-    } catch (err) {
-        console.error('Detailed error:', err);
-        error = `Failed to fetch stores: ${err.message} (${err.code})`;
+        try {
+            loading = true;
+            error = null;
+            console.log('Fetching stores...');
+            const allowedRef = collection(db, 'LSstore');
+            const dbResponse = await getDocs(allowedRef);
+            const fetchedData = dbResponse.docs.map(doc => ({
+                ...doc.data(),
+                id: doc.id
+            }));
+            console.log(`Fetched ${fetchedData.length} stores`);
+            console.log('Sample store data:', fetchedData[0]); // Log first store to check structure
+            dbObjects = fetchedData;
+            console.log('dbObjects length after fetch:', dbObjects.length);
+        } catch (err) {
+            console.error('Detailed error:', err);
+            error = `Failed to fetch stores: ${err.message} (${err.code})`;
+        } finally {
+            loading = false;
+        }
     }
-    finally {
-        loading = false;
-    }};
+
+    // Ensure data is loaded before component is mounted
+    onMount(async () => {
+        await fetchStores();
+    });
+
+    // Optimized toggle handler with optimistic updates
+    async function toggleChange(event) {
+        const storeid = event.target.dataset.storeid;
+        const newLSallowed = event.target.checked;
+
+        // Optimistic update
+        dbObjects = dbObjects.map(store => 
+            store.storeid === storeid 
+                ? { ...store, LSallowed: newLSallowed, user: $user.email } 
+                : store
+        );
+
+        try {
+            const object = { storeid, LSallowed: newLSallowed };
+            await writeViaFunction(object);
+
+            logEvent(analytics, 'store_toggled', {
+                storeid,
+                toggled_to: newLSallowed,
+            });
+        } catch (err) {
+            // Revert on error
+            dbObjects = dbObjects.map(store => 
+                store.storeid === storeid 
+                    ? { ...store, LSallowed: !newLSallowed } 
+                    : store
+            );
+            console.error("Error updating Firestore:", err);
+        }
+    }
 
     async function writeViaFunction(object) {
       const functionWrite = httpsCallable(func, 'updatestoresettings');
@@ -129,96 +175,77 @@
           console.error(`Details: ${details}`);
       });
     }
-
-    async function toggleChange(event) {
-        try {
-            const storeid = event.target.dataset.storeid;
-            const newLSallowed = event.target.checked;
-
-            //Triggering update Firebase Function
-            const object = {storeid: storeid, LSallowed: newLSallowed};
-            console.log(`Updating ${storeid} to ${newLSallowed} via functions`);
-            await writeViaFunction(object)
-            console.log(`----`);
-
-            // const storeRef = doc(db, 'LSstore', storeid);
-            // await updateDoc(storeRef, {LSallowed: newLSallowed, lastEdit: serverTimestamp(), user: $user.email});
-            // console.log(`Updated ${storeid} to ${newLSallowed} via direct write`);
-
-            logEvent(analytics, 'store_toggled', {
-                storeid: storeid,
-                toggled_to: newLSallowed,
-              });
-
-        // Optimistically update UI
-            dbObjects = dbObjects.map(store => 
-                store.storeid === storeid ? { ...store, LSallowed: newLSallowed,user: $user.email } : store
-            );
-
-            // Update filtered list as well
-            getFilteredObjects(); 
-        } catch (err) {
-            console.error("Error updating Firestore:", err);
-        }
-    }
-
-    // Use $effect to watch for changes in search term
-    // $effect(() => {
-    //     if (searchTerm !== undefined && !loading) {
-    //         applyFilters();
-    //     }
-    // });
-
-    onMount(fetchStores);
-
 </script>
 
 {#if loading}
-    <div class="flex justify-center items-center h-64 g-3" >
-        <div class="text-2xl pr-3">Loading</div><div class="loading loading-spinner loading-lg text-primary"></div>
-      </div>
+    <div class="flex justify-center items-center h-64">
+        <div class="text-2xl pr-3">Loading stores...</div>
+        <div class="loading loading-spinner loading-lg text-primary"></div>
+    </div>
+{:else if error}
+    <div class="alert alert-error">
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>{error}</span>
+    </div>
 {:else}
+    <!-- Search and controls -->
+    <div class="mb-4 flex flex-col md:flex-row gap-4 items-center justify-between">
+        <input
+            type="text"
+            bind:value={searchTerm}
+            placeholder="Search stores..."
+            class="input input-bordered w-full max-w-xs"
+        />
+    </div>
 
-<!-- New search input -->
-<div class="mb-4">
-  <input
-      type="text"
-      bind:value={searchTerm}
-      placeholder="Search stores..."
-      class="input input-bordered w-full max-w-xs"
-  />
-</div>
-
-<div class="overflow-x-auto pt-5">
-    <table class="table">
-      <!-- head -->
-      <thead>
-        <tr>
-            <th></th>
-          <th class="cursor-pointer" onclick={() => sortData('storeid')}>StoreID</th>
-          <th class="cursor-pointer" onclick={() => sortData('L&S Allowed')}>L&S Allowed</th>
-          <th class="cursor-pointer" onclick={() => sortData('Last edited')}>Last edited</th>
-          <th class="cursor-pointer" onclick={() => sortData('Last edit by')}>Last edit by</th>
-          <th>Change</th>
-        </tr>
-      </thead>
-      <tbody>
-        {#each filteredObjects as storeObject}
-          <tr>
-            <th></th>
-            <th>{storeObject.storeid}</th>
-            <td>{storeObject.LSallowed}</td>
-            <td>{storeObject.lastEdit}</td>
-            <td>{storeObject.user}</td>
-            <td><input type="checkbox" class="toggle" checked={storeObject.LSallowed} data-storeid={storeObject.storeid} onchange={toggleChange}/></td>
-          </tr>
-        {/each}
-        {#if filteredObjects.length === 0}
+    <!-- Table -->
+    <div class="overflow-x-auto">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="cursor-pointer hover:bg-base-200" onclick={() => sortData('storeid')}>
+                        StoreID {#if sortColumn === 'storeid'}{sortDirection === 'asc' ? '↑' : '↓'}{/if}
+                    </th>
+                    <th class="cursor-pointer hover:bg-base-200" onclick={() => sortData('LSallowed')}>
+                        L&S Allowed {#if sortColumn === 'LSallowed'}{sortDirection === 'asc' ? '↑' : '↓'}{/if}
+                    </th>
+                    <th class="cursor-pointer hover:bg-base-200" onclick={() => sortData('lastEdit')}>
+                        Last edited {#if sortColumn === 'lastEdit'}{sortDirection === 'asc' ? '↑' : '↓'}{/if}
+                    </th>
+                    <th class="cursor-pointer hover:bg-base-200" onclick={() => sortData('user')}>
+                        Last edit by {#if sortColumn === 'user'}{sortDirection === 'asc' ? '↑' : '↓'}{/if}
+                    </th>
+                    <th>Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                {#each filteredObjects as storeObject}
+                    <tr>
+                        <th></th>
+                        <th>{storeObject.storeid}</th>
+                        <td>{storeObject.LSallowed}</td>
+                        <td>{formatTimestamp(storeObject.lastEdit)}</td>
+                        <td>{storeObject.user}</td>
+                        <td>
+                            <input 
+                                type="checkbox" 
+                                class="toggle" 
+                                checked={storeObject.LSallowed} 
+                                data-storeid={storeObject.storeid} 
+                                onchange={toggleChange}
+                            />
+                        </td>
+                    </tr>
+                {/each}
+                {#if filteredObjects.length === 0}
                     <tr>
                         <td colspan="6" class="text-center py-4">No matching stores found</td>
                     </tr>
-          {/if}
-    </tbody>
-    </table>
+                {/if}
+            </tbody>
+        </table>
     </div>
 {/if}

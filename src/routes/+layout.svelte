@@ -8,6 +8,7 @@
 	import Login from "../lib/Login.svelte";
     import "../lib/firebase";
 	import Navbar from '$lib/Navbar.svelte';
+    import ThemeSwitcher from '$lib/ThemeSwitcher.svelte';
 
     const auth = getAuth();
     export const user = writable(null);
@@ -15,30 +16,16 @@
     // Set up auth listener immediately, not waiting for mount
     onAuthStateChanged(auth, (firebaseUser) => {
         user.set(firebaseUser);
-        console.log(firebaseUser 
-            ? `User is authenticated: ${firebaseUser.uid}`
-            : 'User is not authenticated'
-        );
+        // console.log(firebaseUser 
+        //     ? `User is authenticated: ${firebaseUser.uid}`
+        //     : 'User is not authenticated'
+        // );
     });
 
     // Set context immediately
     setContext("user", user);
 
-    // To get calue of user, need to subscribe to it
-    // user.subscribe(value => {
-    //     console.log(value?.uid);
-    // });
-
-    // To save uid to local storage
-    // user.subscribe(value => {
-    //     localStorage.setItem("uid", value?.uid);
-    // });
-
-    // To save uid to new variable and use in functions 
-    // let uid;
-    // user.subscribe(value => {
-    //     uid = value?.uid;
-    // });
+    
 </script>
 
 {#if !$user}
@@ -48,6 +35,8 @@
 		{@render children()}
 	{/if}
 {/if}
+
+<ThemeSwitcher />
 		
 
 
