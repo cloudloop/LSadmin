@@ -1,30 +1,22 @@
 <script>
-	import AuthCheck from "$lib/AuthCheck.svelte";
-	import Logout from "$lib/Logout.svelte";
-    import { user } from "$lib/firebase";
+  // Main page component that handles user authentication state and displays appropriate content
+    import Login from "$lib/Login.svelte";
+    import {logout} from "$lib/Logout.js";
+    import { getContext } from "svelte";
     
-    if (user) {
-        // console.log('User object:', user);
+    // Get the user context from the layout
+    const user = getContext("user");
 
-        // // Example usage:
-        // console.log('UID:', user.emailVerified);
-        // console.log('Email:', user.metadata);
-    }
-
+    // Import global styles
+    import "../app.css";
 </script>
 
-
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-
-<AuthCheck>
-
-    <h1>Welcome back, {user.displayName || 'Mysterious User'}!</h1>
-    <p>Your email: {user.email}</p>
-
-    <Logout />
-
-</AuthCheck>
-
-<p>CAn you see the secret text above?</p>
+<!-- Conditional rendering based on authentication state-->
+{#if $user}
+    <!-- Display welcome message and logout button for authenticated users--> 
+    <p>Welcome, {$user.uid}!</p>
+    <button class="btn btn-success" onclick={logout}>Logout</button>
+{:else}
+    <!-- Show login component for unauthenticated users-->
+    <Login />
+{/if}
