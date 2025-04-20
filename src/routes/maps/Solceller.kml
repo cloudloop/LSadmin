@@ -1,0 +1,3391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Solceller</name>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>ÄLVKARLEÖVÄGEN 25</name>
+      <address>Norra Djurgårdsstaden ÄLVKARLEÖVÄGEN 25</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Åsbacken 4</name>
+      <address>Lidingö Åsbacken 4</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Bågvägen 9, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Bågvägen 9, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Barrstigen 38, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Barrstigen 38, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Barrstigen 40, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Barrstigen 40, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Blåklintsvägen 7</name>
+      <address>Lidingö Blåklintsvägen 7</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>BOBERGSGATAN 10</name>
+      <address>Norra Djurgårdsstaden BOBERGSGATAN 10</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>BOBERGSGATAN 55</name>
+      <address>Norra Djurgårdsstaden BOBERGSGATAN 55</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>BOBERGSGATAN 71</name>
+      <address>Norra Djurgårdsstaden BOBERGSGATAN 71</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>BOBERGSGATAN 77</name>
+      <address>Norra Djurgårdsstaden BOBERGSGATAN 77</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>BOBERGSGATAN 79</name>
+      <address>Norra Djurgårdsstaden BOBERGSGATAN 79</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>BOBERGSGATAN 87</name>
+      <address>Norra Djurgårdsstaden BOBERGSGATAN 87</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Brotorpsvägen 4, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Brotorpsvägen 4, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ceremonimästarvägen 59, 181 40 Lidingö, Sweden</name>
+      <address>Lidingö Ceremonimästarvägen 59, 181 40 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ceremonimästarvägen 71, 181 40 Lidingö, Sweden</name>
+      <address>Lidingö Ceremonimästarvägen 71, 181 40 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Constantiavägen 25</name>
+      <address>Lidingö Constantiavägen 25</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>DREVERGATAN 1a</name>
+      <address>Norra Djurgårdsstaden DREVERGATAN 1a</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>DREVERGATAN 3</name>
+      <address>Norra Djurgårdsstaden DREVERGATAN 3</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Eddavägen 10A, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Eddavägen 10A, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Eddavägen 10B, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Eddavägen 10B, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Eddavägen 2, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Eddavägen 2, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Eddavägen 2B, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Eddavägen 2B, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Elfviks udde 10, 181 90 Lidingö, Sweden</name>
+      <address>Lidingö Elfviks udde 10, 181 90 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Elfviks udde 12, 181 90 Lidingö, Sweden</name>
+      <address>Lidingö Elfviks udde 12, 181 90 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Elfviks udde 2, 181 90 Lidingö, Sweden</name>
+      <address>Lidingö Elfviks udde 2, 181 90 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Fågelsträcket 14, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Fågelsträcket 14, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Fågelsträcket 16, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Fågelsträcket 16, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Fågelsträcket 22, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Fågelsträcket 22, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Fågelsträcket 27, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Fågelsträcket 27, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>FAGNINGAGATAN 9</name>
+      <address>Norra Djurgårdsstaden FAGNINGAGATAN 9</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Flädertunet 2, 181 48 Lidingö, Sweden</name>
+      <address>Lidingö Flädertunet 2, 181 48 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Flädertunet 8, 181 48 Lidingö, Sweden</name>
+      <address>Lidingö Flädertunet 8, 181 48 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Furutorpsvägen 2, 181 90 Lidingö, Sweden</name>
+      <address>Lidingö Furutorpsvägen 2, 181 90 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>GRYTHUNDGATAN 6</name>
+      <address>Norra Djurgårdsstaden GRYTHUNDGATAN 6</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HÅRDVALLSGATAN 19</name>
+      <address>Norra Djurgårdsstaden HÅRDVALLSGATAN 19</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Harrvägen 14</name>
+      <address>Lidingö Harrvägen 14</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Harrvägen 8A</name>
+      <address>Lidingö Harrvägen 8A</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Herrgårdsstigen 21, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Herrgårdsstigen 21, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Herrgårdsstigen 23, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Herrgårdsstigen 23, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Herrgårdsstigen 29, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Herrgårdsstigen 29, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Herrgårdsstigen 31, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Herrgårdsstigen 31, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Herserudsvägen 44A, 181 50 Lidingö, Sweden</name>
+      <address>Lidingö Herserudsvägen 44A, 181 50 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 15A, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 15A, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 17A, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 17A, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 21, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 21, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 22, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 22, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 23, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 23, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 27, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 27, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 28, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 28, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 29, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 29, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 30, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 30, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 32, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 32, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 33A, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 33A, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 5, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 5, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Högsätravägen 9, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Högsätravägen 9, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Höguddsvägen 65, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Höguddsvägen 65, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HÖGVILTSGATAN 5</name>
+      <address>Norra Djurgårdsstaden HÖGVILTSGATAN 5</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Höjdvägen 5</name>
+      <address>Lidingö Höjdvägen 5</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HUSARVIKSGATAN 16</name>
+      <address>Norra Djurgårdsstaden HUSARVIKSGATAN 16</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HUSARVIKSGATAN 18</name>
+      <address>Norra Djurgårdsstaden HUSARVIKSGATAN 18</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HUSARVIKSGATAN 20</name>
+      <address>Norra Djurgårdsstaden HUSARVIKSGATAN 20</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HUSARVIKSGATAN 6</name>
+      <address>Norra Djurgårdsstaden HUSARVIKSGATAN 6</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>HUSARVIKSTOGET 24</name>
+      <address>Norra Djurgårdsstaden HUSARVIKSTOGET 24</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Jägarstigen 38, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Jägarstigen 38, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Jägarstigen 58, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Jägarstigen 58, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Jägarstigen 8, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Jägarstigen 8, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>JAKTGATAN 29</name>
+      <address>Norra Djurgårdsstaden JAKTGATAN 29</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Jaktstigen 8, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Jaktstigen 8, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Jupitervägen 3B, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Jupitervägen 3B, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Karpvägen 19</name>
+      <address>Lidingö Karpvägen 19</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Karpvägen 54</name>
+      <address>Lidingö Karpvägen 54</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Karpvägen 80</name>
+      <address>Lidingö Karpvägen 80</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Kastanjetunet 2, 181 48 Lidingö, Sweden</name>
+      <address>Lidingö Kastanjetunet 2, 181 48 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Kastanjetunet 4, 181 48 Lidingö, Sweden</name>
+      <address>Lidingö Kastanjetunet 4, 181 48 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Killingevägen 34, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Killingevägen 34, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Killingevägen 41, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Killingevägen 41, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Korallvägen 2, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Korallvägen 2, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Korallvägen 4, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Korallvägen 4, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Kyttingevägen 103A</name>
+      <address>Lidingö Kyttingevägen 103A</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LABRADORGATAN 16</name>
+      <address>Norra Djurgårdsstaden LABRADORGATAN 16</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LABRADORGATAN 18</name>
+      <address>Norra Djurgårdsstaden LABRADORGATAN 18</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LABRADORGATAN 24</name>
+      <address>Norra Djurgårdsstaden LABRADORGATAN 24</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LABRADORGATAN 4</name>
+      <address>Norra Djurgårdsstaden LABRADORGATAN 4</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Laxvägen 26</name>
+      <address>Lidingö Laxvägen 26</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Laxvägen 42A</name>
+      <address>Lidingö Laxvägen 42A</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Laxvägen 46, 181 30 Lidingö, Sweden</name>
+      <address>Lidingö Laxvägen 46, 181 30 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LAXVÄGEN 48B</name>
+      <address>Lidingö LAXVÄGEN 48B</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Laxvägen 62A</name>
+      <address>Lidingö Laxvägen 62A</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 10, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 10, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 12, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 12, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 16, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 16, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 21, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 21, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 23, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 23, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 29, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 29, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 2A, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 2A, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 31, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 31, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 33, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 33, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 33, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 33, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 43, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 43, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 45, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 45, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 46, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 46, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 48, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 48, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 52, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 52, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 53, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 53, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 55, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 55, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 55, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 55, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 6, 181 59 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 6, 181 59 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lillåkersvägen 83, 181 58 Lidingö, Sweden</name>
+      <address>Lidingö Lillåkersvägen 83, 181 58 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Kommunboende<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Kommunboende</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Lingonstigen 7, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Lingonstigen 7, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Litorinavägen 18, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Litorinavägen 18, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Litorinavägen 20, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Litorinavägen 20, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Litorinavägen 4, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Litorinavägen 4, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Litorinavägen 7, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Litorinavägen 7, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LÖVÄNGSGATAN 23</name>
+      <address>Norra Djurgårdsstaden LÖVÄNGSGATAN 23</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Milvägen 3, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Milvägen 3, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Musselvägen 9, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Musselvägen 9, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Nautilusvägen 1, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Nautilusvägen 1, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Nautilusvägen 11, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Nautilusvägen 11, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Neptunivägen 8, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Neptunivägen 8, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Nilstorpsvägen 51, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Nilstorpsvägen 51, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Nilstorpsvägen 76, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Nilstorpsvägen 76, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Norrstigen 22</name>
+      <address>Lidingö Norrstigen 22</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Norrstigen 24</name>
+      <address>Lidingö Norrstigen 24</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Norrviksvägen 14A, 181 65 Lidingö, Sweden</name>
+      <address>Lidingö Norrviksvägen 14A, 181 65 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ollonstigen 11, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Ollonstigen 11, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ollonstigen 2, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Ollonstigen 2, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Oskarsvägen 22, 181 32 Lidingö, Sweden</name>
+      <address>Lidingö Oskarsvägen 22, 181 32 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Östervägen 14, 181 65 Lidingö, Sweden</name>
+      <address>Lidingö Östervägen 14, 181 65 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Östervägen 5, 181 65 Lidingö, Sweden</name>
+      <address>Lidingö Östervägen 5, 181 65 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Östervägen 7, 181 65 Lidingö, Sweden</name>
+      <address>Lidingö Östervägen 7, 181 65 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ostronvägen 10, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Ostronvägen 10, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ostronvägen 13, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Ostronvägen 13, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ostronvägen 8, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Ostronvägen 8, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ostronvägen 9, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Ostronvägen 9, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Oxelvägen 10, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Oxelvägen 10, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Parksätravägen 15A, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Parksätravägen 15A, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Parksätravägen 17A, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Parksätravägen 17A, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Pärlvägen 1, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Pärlvägen 1, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Pärlvägen 2, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Pärlvägen 2, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Pärlvägen 20, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Pärlvägen 20, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Pärlvägen 3, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Pärlvägen 3, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Pärlvägen 4, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Pärlvägen 4, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Pärlvägen 8, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Pärlvägen 8, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Päronstigen 1, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Päronstigen 1, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Päronstigen 11, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Päronstigen 11, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Päronstigen 9, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Päronstigen 9, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Planetstigen 14, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Planetstigen 14, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rastavägen 16, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Rastavägen 16, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rastavägen 20, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Rastavägen 20, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rastavägen 8, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Rastavägen 8, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rödstugevägen 21</name>
+      <address>Lidingö Rödstugevägen 21</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rödstugevägen 27A </name>
+      <address>Lidingö Rödstugevägen 27A</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rödstugevägen 27B</name>
+      <address>Lidingö Rödstugevägen 27B</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Rönnvägen 16, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Rönnvägen 16, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ryttarvägen 1, 181 41 Lidingö, Sweden</name>
+      <address>Lidingö Ryttarvägen 1, 181 41 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ryttarvägen 3, 181 41 Lidingö, Sweden</name>
+      <address>Lidingö Ryttarvägen 3, 181 41 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Ryttarvägen 5, 181 41 Lidingö, Sweden</name>
+      <address>Lidingö Ryttarvägen 5, 181 41 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Saturnusringen 18, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Saturnusringen 18, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Seglarvägen 6, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Seglarvägen 6, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Sjöviks Väg 5, 181 90 Lidingö, Sweden</name>
+      <address>Lidingö Sjöviks Väg 5, 181 90 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Sjöviks Väg 8, 181 90 Lidingö, Sweden</name>
+      <address>Lidingö Sjöviks Väg 8, 181 90 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Skidåkarvägen 14*</name>
+      <address>Lidingö Skidåkarvägen 14*</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Skidåkarvägen 16</name>
+      <address>Lidingö Skidåkarvägen 16</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Slånbärsvägen 39A, 181 64 Lidingö, Sweden</name>
+      <address>Lidingö Slånbärsvägen 39A, 181 64 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Slåntunet 7, 181 48 Lidingö, Sweden</name>
+      <address>Lidingö Slåntunet 7, 181 48 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Slogvägen 7</name>
+      <address>Lidingö Slogvägen 7</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Snäckvägen 10, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Snäckvägen 10, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Snäckvägen 7, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Snäckvägen 7, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Snickarvägen 24A, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Snickarvägen 24A, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Söderkroken 11, 181 65 Lidingö, Sweden</name>
+      <address>Lidingö Söderkroken 11, 181 65 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Södra Kungsvägen 206, 181 62 Lidingö, Sweden</name>
+      <address>Lidingö Södra Kungsvägen 206, 181 62 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Södra Kungsvägen 298, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Södra Kungsvägen 298, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Solrosvägen 10, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Solrosvägen 10, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Solrosvägen 2, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Solrosvägen 2, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Spättvägen 10A</name>
+      <address>Lidingö Spättvägen 10A</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 17, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 17, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 31, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 31, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 39, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 39, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 43, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 43, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 45, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 45, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 47, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 47, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Svedjevägen 49, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Svedjevägen 49, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>TAXGATAN 10</name>
+      <address>Norra Djurgårdsstaden TAXGATAN 10</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Taxgatan 4</name>
+      <address>Norra Djurgårdsstaden Taxgatan 4</address>
+      <description><![CDATA[Område: Norra Djurgårdsstaden<br>Fastighetstyp: Brf<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Norra Djurgårdsstaden</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Brf</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Timmermansvägen 7, 181 46 Lidingö, Sweden</name>
+      <address>Lidingö Timmermansvägen 7, 181 46 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Toppmurklevägen 9, 181 57 Lidingö, Sweden</name>
+      <address>Lidingö Toppmurklevägen 9, 181 57 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Tykövägen 4B, 181 61 Lidingö, Sweden</name>
+      <address>Lidingö Tykövägen 4B, 181 61 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Uddvägen 25</name>
+      <address>Lidingö Uddvägen 25</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Vädurstigen 13, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Vädurstigen 13, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Vädurstigen 3, 181 63 Lidingö, Sweden</name>
+      <address>Lidingö Vädurstigen 3, 181 63 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yoldiavägen 2, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Yoldiavägen 2, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yoldiavägen 24, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Yoldiavägen 24, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yoldiavägen 6, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Yoldiavägen 6, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yoldiavägen 7, 181 66 Lidingö, Sweden</name>
+      <address>Lidingö Yoldiavägen 7, 181 66 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yxstigen 1, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Yxstigen 1, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yxstigen 25, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Yxstigen 25, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>Yxstigen 6, 181 47 Lidingö, Sweden</name>
+      <address>Lidingö Yxstigen 6, 181 47 Lidingö, Sweden</address>
+      <description><![CDATA[Område: Lidingö<br>Fastighetstyp: Villa<br>Kontakt: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="Område">
+          <value>Lidingö</value>
+        </Data>
+        <Data name="Fastighetstyp">
+          <value>Villa</value>
+        </Data>
+        <Data name="Kontakt">
+          <value/>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>
