@@ -5,14 +5,40 @@
     let geocoder: google.maps.Geocoder;
     let savedPlaces: { lat: number; lng: number; address: string }[] = [];
     let lastClick: google.maps.LatLng | null = null; // Define the lastClick variable
+    let markers: google.maps.Marker[] = []; // Store references to markers
+    let kmlLayer: google.maps.KmlLayer; // Reference to the KML layer
   
     onMount(() => {
       const initMap = () => {
-        map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+        const map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
           center: { lat: 59.3293, lng: 18.0686 }, // Stockholm
           zoom: 13,
         });
+
+        // 🔽 Add your KML overlay here
+        // Add KML layer
+        const kmlLayer = new google.maps.KmlLayer({
+          url: "https://cloudloop.github.io/LSadmin/Solceller.kml",
+          map: map,
+          preserveViewport: true
+        });
+
+        // Listen for KML loading errors
+        google.maps.event.addListener(kmlLayer, 'status_changed', function() {
+          if (kmlLayer.getStatus() !== 'OK') {
+            console.error("KML layer loading error:", kmlLayer.getStatus());
+          } else {
+            console.log("KML layer loaded successfully");
+          }
+        });
+
         geocoder = new google.maps.Geocoder();
+
+        // Fix map sizing issue
+        setTimeout(() => {
+          google.maps.event.trigger(map, 'resize');
+          map.setCenter({ lat: 59.3293, lng: 18.0686 });
+        }, 100);
   
         // Track the cursor position when moving over the map
         map.addListener("mousemove", (e: google.maps.MapMouseEvent) => {
@@ -35,7 +61,13 @@
                 address: results[0].formatted_address,
               };
               savedPlaces = [...savedPlaces, place]; // Use reactive assignment
-              new google.maps.Marker({ position: e.latLng, map });
+              // Create marker and store reference
+              const marker = new google.maps.Marker({ 
+                position: e.latLng, 
+                map,
+                animation: google.maps.Animation.DROP
+              });
+              markers.push(marker);
               console.log("Saved:", place);
             } else {
               console.error("Geocoder failed:", status);
@@ -43,6 +75,8 @@
           });
         });
       };
+
+      
   
       const script = document.createElement('script');
       script.src = `https://maps.googleapis.com/maps/api/js?key=${env.PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
@@ -108,6 +142,36 @@
         console.log("No places to remove!");
       }
     }
+
+    function toggleKMLLayer() {
+      if (kmlLayer) {
+        if (kmlLayer.getMap()) {
+          kmlLayer.setMap(null);
+        } else {
+          kmlLayer.setMap(map);
+        }
+      }
+    }
+    
+    function refreshKMLLayer() {
+      // Remove existing KML layer
+      if (kmlLayer) {
+        kmlLayer.setMap(null);
+      }
+      
+      // Add a timestamp to force cache refresh
+      const timestamp = new Date().getTime();
+      const kmlUrl = `${env.PUBLIC_MY_LASTEST_KML}?t=${timestamp}`;
+      
+      // Create new KML layer with the updated URL
+      kmlLayer = new google.maps.KmlLayer({
+        url: kmlUrl,
+        map: map,
+        preserveViewport: true
+      });
+      
+      console.log("KML layer refreshed");
+    }
 </script>
   
 <style>
@@ -138,6 +202,7 @@
     
     .map {
       flex: 1;
+      width: 100%;
       position: relative;
     }
     
@@ -283,6 +348,18 @@
         <p>• Click directly on map to save location</p>
         <p>• Press <span class="keyboard-shortcut">Backspace</span> to remove last saved location</p>
       </div>
+
+      <div class="layers-section">
+        <div class="section-title">KML Overlay</div>
+        <div class="layer-controls">
+          <button class="secondary-btn" on:click={toggleKMLLayer}>
+            Toggle KML Layer
+          </button>
+          <button class="secondary-btn" on:click={refreshKMLLayer}>
+            Refresh KML
+          </button>
+        </div>
+      </div>
       
       <div class="buttons">
         <button class="primary-btn" on:click={downloadCSV}>
@@ -291,11 +368,11 @@
         <button class="secondary-btn" on:click={removeLastPlace}>
           Remove Last
         </button>
-        {#if savedPlaces.length > 0}
+        <!-- {#if savedPlaces.length > 0}
           <button class="danger-btn" on:click={clearAllPlaces}>
             Clear All
           </button>
-        {/if}
+        {/if} -->
       </div>
       
       <div class="places-header">
