@@ -18,7 +18,7 @@
         // 🔽 Add your KML overlay here
         // Add KML layer
         const kmlLayer = new google.maps.KmlLayer({
-          url: "https://cloudloop.github.io/LSadmin/Solceller.kml",
+          url: "https://cloudloop.github.io/LSadmin/Solceller_with_points.kml",
           map: map,
           preserveViewport: true
         });
@@ -76,7 +76,7 @@
         });
       };
 
-      
+
   
       const script = document.createElement('script');
       script.src = `https://maps.googleapis.com/maps/api/js?key=${env.PUBLIC_GOOGLE_MAPS_API_KEY}&libraries=places`;
